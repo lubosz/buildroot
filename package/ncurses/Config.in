@@ -1,3 +1,4 @@
+ 
 config BR2_PACKAGE_NCURSES
 	bool "ncurses"
 	help
@@ -7,8 +8,6 @@ config BR2_PACKAGE_NCURSES
 	  This package installs only a few vital termcap entries
 
 	  http://www.gnu.org/software/ncurses/
-
-if BR2_PACKAGE_NCURSES
 
 config BR2_PACKAGE_NCURSES_WCHAR
 	bool "enable wide char support"
@@ -30,5 +29,3 @@ config BR2_PACKAGE_NCURSES_ADDITIONAL_TERMINFO
 
 	  The terminfo filenames should have the single letter path
 	  prefix. e.g. t/tmux.
-
-endif

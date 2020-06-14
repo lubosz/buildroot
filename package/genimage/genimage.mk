@@ -4,11 +4,10 @@
 #
 ################################################################################
 
-GENIMAGE_VERSION = 10
-GENIMAGE_SOURCE = genimage-$(GENIMAGE_VERSION).tar.xz
-GENIMAGE_SITE = https://github.com/pengutronix/genimage/releases/download/v$(GENIMAGE_VERSION)
-HOST_GENIMAGE_DEPENDENCIES = host-pkgconf host-libconfuse
-GENIMAGE_LICENSE = GPL-2.0
-GENIMAGE_LICENSE_FILES = COPYING
+GENIMAGE_VERSION        = 6
+GENIMAGE_SOURCE         = genimage-$(GENIMAGE_VERSION).tar.xz
+GENIMAGE_SITE           = http://www.pengutronix.de/software/genimage/download
+GENIMAGE_DEPENDENCIES   = host-pkgconf libconfuse
+GENIMAGE_LICENSE        = GPLv2
 
 $(eval $(host-autotools-package))

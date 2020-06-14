@@ -4,9 +4,9 @@
 #
 ################################################################################
 
-DOSFSTOOLS_VERSION = 3.0.26
-DOSFSTOOLS_SOURCE = dosfstools-$(DOSFSTOOLS_VERSION).tar.xz
-DOSFSTOOLS_SITE = http://daniel-baumann.ch/files/software/dosfstools
+DOSFSTOOLS_VERSION = 3.0.27
+DOSFSTOOLS_SOURCE = dosfstools_$(DOSFSTOOLS_VERSION).orig.tar.xz
+DOSFSTOOLS_SITE = http://deb.debian.org/debian/pool/main/d/dosfstools/
 DOSFSTOOLS_LICENSE = GPLv3+
 DOSFSTOOLS_LICENSE_FILES = COPYING
 
