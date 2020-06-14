@@ -606,13 +606,6 @@ endif
 	else \
 		/sbin/ldconfig -r $(TARGET_DIR); \
 	fi
-	( \
-		echo "NAME=Buildroot"; \
-		echo "VERSION=$(BR2_VERSION_FULL)"; \
-		echo "ID=buildroot"; \
-		echo "VERSION_ID=$(BR2_VERSION)"; \
-		echo "PRETTY_NAME=\"Buildroot $(BR2_VERSION)\"" \
-	) >  $(TARGET_DIR)/etc/os-release
 
 	@$(foreach d, $(call qstrip,$(BR2_ROOTFS_OVERLAY)), \
 		$(call MESSAGE,"Copying overlay $(d)"); \
