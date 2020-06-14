@@ -35,7 +35,7 @@ rm -f dl/sdl2-*.tar.gz
 
 # Perform the build.
 echo "Starting build..."
-nice make BR2_EXTERNAL=board/opendingux
+make
 
 # Create packages.
 echo "Creating packages..."
